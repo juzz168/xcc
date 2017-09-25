@@ -8,7 +8,8 @@
     "pages/my/adlist",
     "pages/category/category",
     "pages/side/side",
-    "pages/article/article"
+    "pages/article/article",
+    "pages/index/index"
   ],
   "tabBar": {
     "list": [
@@ -19,7 +20,7 @@
         "selectedIconPath": "imgs/toolbar/home@selected.jpg"
       },
       {
-        "pagePath": "pages/category/category",
+        "pagePath": "pages/index/index",
         "iconPath": "imgs/toolbar/category.jpg",
         "selectedIconPath": "imgs/toolbar/category@selected.jpg",
         "text": "分类"

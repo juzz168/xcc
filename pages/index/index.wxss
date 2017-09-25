@@ -1,0 +1,9 @@
+page{background-color:rgb(247, 245, 244);margin-left:auto;}
+.swiper-item{width: 100%}
+.album-pic{position:relative;float:left;width:48px;margin-right:36px;margin-bottom:3px;margin-left:auto;}
+.album-pic image{height:46px;margin-left:auto;}
+.album-container image {float: left;width: 100%;}
+.title-mode3{opacity:1;line-height:37px;background-color:rgb(250, 250, 250);border-color:rgb(34, 34, 34);border-style:none;color:#666;font-size:15px;margin-left:auto;margin-right:auto;margin-top:11px;}
+.title-mode3 .js-text{margin-left:10px;}
+.suspension{opacity:1;color:#fff;font-size:23px;margin-left:auto;bottom: 35px;}
+.suspension-item{margin-bottom:1px;background-color:rgba(0,0,0,0.5);margin-left:auto;}

@@ -1,0 +1,56 @@
+<view class="app" >
+  <!--banner -->
+  <view class="ele-container">
+    <swiper indicator-dots="true" circular="true" autoplay="true" vertical="" interval="2000" duration="750" style="height:241px;margin-left:auto;margin-right:auto;margin-top:0;opacity:1;">
+      <swiper-item >
+        <image class="swiper-item" src="http://img.weiye.me/zcimgdir/album/file_58ef16b51c4bd.jpg"/>
+      </swiper-item>
+      <swiper-item >
+        <image class="swiper-item" src="http://img.weiye.me/zcimgdir/album/file_58f6fb921bce4.jpg"/>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 栏目 -->
+  <view class="ele-container">
+    <view class="element album sec-mode" style="background-color:rgb(250, 250, 250);color:rgb(102, 102, 102);font-size:11px;opacity:1;text-align:center;margin-left:auto;">
+      <view class="album-container background-ele clearfix" style="padding-left:36px;padding-top:3px;margin-left:auto;">
+        <view class="album-pic router">
+          <image src="http://img.weiye.me/zcimgdir/album/file_58ef1b07817ed.jpg"></image>
+          <text class="title">最新推荐</text>
+        </view>
+        <view class="album-pic router">
+          <image src="http://img.weiye.me/zcimgdir/album/file_58ef1b078974e.jpg"></image>
+          <text class="title">最新推荐</text>
+        </view>
+        <view class="album-pic router" >
+          <image src="http://img.weiye.me/zcimgdir/album/file_58ef1b07907f3.jpg"></image>
+          <text class="title">最新推荐</text>
+        </view>
+        <view class="album-pic router" >
+          <image src="http://img.weiye.me/zcimgdir/album/file_58ef1b0876f3a.jpg"></image>
+          <text class="title">最新推荐</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 全部信息  -->
+  <view class="ele-container">
+    <view class="element title-ele title-mode3">
+      <text class="js-text">全部信息</text>
+    </view>
+  </view>
+  <!-- 右侧悬挂栏目 -->
+  <view class="element suspension">
+    <view class="suspension-item" data-type="service">
+      <icon class="ico-moon icon-service2 suspension-service">
+        <contact-button type="default-dark" size="20" session-from="suspension"></contact-button>
+      </icon>
+    </view>
+    <view class="suspension-item" data-router="myOrder"  catchtap="suspensionTurnToPage">
+      <icon class="ico-moon icon-notebook"></icon>
+    </view>
+    <view class="suspension-item" data-type="top" catchtap="scrollPageTop" >
+      <icon class="ico-moon icon-top"></icon>
+    </view>
+  </view>
+</view>
