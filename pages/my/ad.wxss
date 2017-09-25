@@ -1,0 +1,14 @@
+page{background-color:rgb(247, 245, 244);margin-left:auto;}
+.app{margin: 0 10px;box-sizing:border-box;}
+.section{height: 3rem;line-height: 3rem;border-bottom:solid 1px #ccc;font-size: 16px;}
+.section .left{float:left;}
+.section .right{float:right;}
+.section .right text{color: red}
+.lineheight{height: 2rem;line-height: 2rem;}
+.title{font-size:0.8rem;color: #aaa;height:2rem;border-bottom:solid 1px #ccc;line-height: 2rem;}
+
+.section .section__title{display: table-cell;padding-right:10px; }
+.section input{display: table-cell;width:15rem;}
+.section textarea{display: table-cell;width:15rem;}
+.section image{height: 50px;width: 50px;}
+.btn-area button{background: red;color: #fff;margin-top: 20px;}

@@ -1,0 +1,22 @@
+<!--pages/my/userInfo.wxml-->
+ <view  class="item-main">
+          <view class="section">萨达
+            <input disabled name="name" placeholder="姓名" value="{{userInfo.nickName}}" />
+          </view>
+          <view class="section">
+            <input disabled type="number" name="mobile" placeholder="手机号码" value="{{userInfo.mobile}}"/>
+          </view>
+          <view class="section">
+            <input disabled name="job" placeholder="职务" value="{{userInfo.totalDetail}}"/>
+          </view>
+           <view class="section">
+            <input disabled name="job" placeholder="地区" value="{{userInfo.totalDetail}}"/>
+          </view>
+           <view class="section">
+            <input disabled name="job" placeholder="入门时间" value="{{userInfo.totalDetail}}"/>
+          </view>
+          <view class="section">
+            <input disabled name="job" placeholder="个人荣誉" value="{{userInfo.totalDetail}}"/>
+          </view>
+          <button bindtap="save">保存</button>
+      </view>

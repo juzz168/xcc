@@ -1,0 +1,68 @@
+<view class="app" >
+<form bindsubmit="formSubmit" bindreset="formReset" >
+  <view class="title">选择分类</view>
+  <!-- 一级分类 -->
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        一级分类：{{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <!-- 二级分类 -->
+  <view class="section">
+    <picker bindchange="sbindPickerChange" value="{{sindex}}" range="{{label}}">
+      <view class="picker">
+        二级分类：{{label[sindex]}}
+      </view>
+    </picker>
+  </view>
+  <!-- 本分类发布需要 -->
+  <view class='section'>
+    <view class='left'>本分类发布需要</view>
+    <view class='right'><text>{{priceShow}}</text>元</view>
+  </view>
+  <!-- 我要置顶 -->
+  <view class='section'>
+    <view class='left'>我要置顶</view>
+    <view class='right'><switch  bindchange="switch1Change"/></view>
+  </view>
+  <!-- 置顶时间 -->
+  <view class="section">
+    <picker bindchange="tbindPickerChange" value="{{index}}" range="{{topArray}}">
+      <view class="picker">
+        置顶时间：{{topArray[tindex]}}天
+      </view>
+    </picker>
+  </view>
+  <!-- 置顶费用 -->
+  <view class="section lineheight" style='border:none'>
+    <view class='left'>置顶{{topArray[tindex]}}天</view>
+    <view class='right'><text>{{datePrice}}</text>元</view>
+  </view>
+  <view class='section lineheight'>
+    <view class='left'>总共费用</view>
+    <view class='right'><text>{{allPrice}}</text>元</view>
+  </view>
+  <view class="title">填些发布信息</view>
+  <!-- 标题 -->
+  <view class="section">
+    <view class='left'>标题：</view>
+    <input name="input" placeholder="请输入您的标题,最大输入长度为10" focus="{{focus}}" maxlength="10" />
+  </view>
+  <!-- 内容： -->
+  <view class="section">
+    <view class="section__title">内容：</view>
+    <textarea bindblur="bindTextAreaBlur" auto-height placeholder="请输入您的内容" />
+  </view>
+  <!-- 图片 -->
+  <view class="section">
+    <view class="left">图片：</view>
+    <image src="../../imgs/59b8eb6629f1e.png" catchtap="image1Change" ></image>
+  </view>
+  <!-- 提交 -->
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+  </view>
+</form>
+</view>

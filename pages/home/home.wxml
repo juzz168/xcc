@@ -1,0 +1,73 @@
+<!--home.wxml-->
+<import src="../tpls/post-item-template.wxml" />
+<swiper indicator-dots="true" class="swiper">
+<swiper-item class="banner-item">
+ <view class="category-main">
+        <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/video.jpg" mode="aspectFill"></image>
+          <view>视频教学</view>
+        </view>
+        <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/brother.jpg" mode="aspectFill"></image>
+          <view>同门师兄</view>
+        </view>
+        <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/food.jpg" mode="aspectFill"></image>
+          <view>食材展示</view>
+        </view>
+        <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/hall.png" mode="aspectFill"></image>
+          <view>交流大厅</view>
+        </view>
+        <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/project.jpg" mode="aspectFill"></image>
+          <view>项目众筹</view>
+        </view>
+         <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/information.jpg" mode="aspectFill"></image>
+          <view>资讯</view>
+        </view>
+         <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/help.jpg" mode="aspectFill"></image>
+          <view>互帮互助</view>
+        </view>
+         <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/service.jpg" mode="aspectFill"></image>
+          <view>服务市场</view>
+        </view>
+    </view>
+    </swiper-item>
+    <swiper-item class="banner-item">
+ <view class="category-main">
+        <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/icon/cart@top.png" mode="aspectFill"></image>
+          <view>视频教学</view>
+        </view>
+         <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/icon/cart@top.png" mode="aspectFill"></image>
+          <view>视频教学</view>
+        </view>
+         <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/icon/cart@top.png" mode="aspectFill"></image>
+          <view>视频教学</view>
+        </view>
+         <view class="category-goods-items" bindtap="onProductsItemTap">
+          <image src="../../imgs/icon/cart@top.png" mode="aspectFill"></image>
+          <view>视频教学</view>
+        </view>
+    </view>
+    </swiper-item>
+    </swiper>
+<swiper indicator-dots="true" autoplay="true" class="swiper_ad">
+        <block wx:for="{{bannerArr}}">
+            <swiper-item class="banner-item" bindtap="onProductsItemTap" data-id="{{item.key_word}}">
+                <image class="item-image" src="{{item.img.url}}" mode="aspectFill" />
+            </swiper-item>
+        </block>   
+    </swiper>
+    <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
+        <!--//template-->
+        <view catchtap="onPostTap" data-postId="{{item.postId}}">
+             <template is="postItem" data="{{...item}}"/>
+        </view>
+</block>
